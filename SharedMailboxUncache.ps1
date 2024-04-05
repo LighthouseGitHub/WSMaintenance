@@ -1,4 +1,5 @@
 # SharedMailboxUnCache.ps1
+#This script should be run under the NT AUTHORITY\System account, and should configure Outlook to not cache shared folders offline. This is only tested to work on the 16.0 version of Outlook. This will throw an error basically every time because all computers have some profiles that are missing the Outlook keys. 
 
 # Define the registry path and value to set
 $registryPath = "Software\Microsoft\Office\16.0\Outlook"
